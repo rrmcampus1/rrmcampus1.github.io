@@ -10,25 +10,5 @@
 </head>
 <body>
     <div id="container"></div>
-    <script>
-        // Get the container element by its id
-        var container = document.getElementById('container');
-
-        // Fetch the HTML file
-        fetch('lundle.html')
-            .then(function (response) {
-                return response.text();
-            })
-            .then(function (html) {
-                // Inject the HTML code into the container element
-                container.innerHTML = html;
-            })
-            .catch(function (error) {
-                console.log('Error fetching HTML file:', error);
-            });
-
-    </script>
-    <!-- import html from html index -->
-
 </body>
 </html>
